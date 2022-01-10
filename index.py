@@ -55,7 +55,7 @@ print("")
 print("lines\tblank lines\tcomment lines\tcode lines\t\tFilename")
 
 for fileToCheck in filesToCheck:
-   with open(fileToCheck) as f:
+   with open(fileToCheck, encoding="utf8") as f:
 
       fileLineCount = 0
       fileBlankLineCount = 0
